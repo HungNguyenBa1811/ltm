@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.zip.GZIPInputStream;
 import java.util.zip.GZIPOutputStream;
 
-public class Bai26 {
+public class TCP_GZIP2 {
     static final String HOST = "36.50.135.242";
     static final int PORT = 2210;
     static final String CREDS = "B23DCAT120;VAHA0iix";

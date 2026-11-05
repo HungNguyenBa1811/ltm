@@ -4,7 +4,7 @@ import java.rmi.registry.Registry;
 
 import RMI.CharacterService;
 
-public class Bai18 {
+public class RMI_CHARACTER1 {
     private static final String HOST = "36.50.135.242";
     private static final String[] CREDS = {"B23DCAT120","Cg9wQpud"}; 
     public static String solve(String a) throws Exception {

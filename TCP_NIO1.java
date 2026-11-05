@@ -2,7 +2,7 @@ import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
 
-public class Bai27 {
+public class TCP_NIO1 {
     private static final String HOST = "36.50.135.242";
     private static final int PORT = 2211; 
     private static final String CREDS = "B23DCAT120;e4ZUMzhR";

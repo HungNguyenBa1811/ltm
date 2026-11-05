@@ -5,7 +5,7 @@ import java.util.Locale;
 
 import RMI.DataService;
 
-public class Bai30 {
+public class RMI_DATA2 {
     private static final String HOST = "36.50.135.242";
     private static final String[] CREDS = {"B23DCAT120","UUkUtpEf"}; 
 public static String solve(String csvData) {

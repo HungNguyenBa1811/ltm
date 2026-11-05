@@ -5,7 +5,7 @@ import java.rmi.registry.Registry;
 import RMI.ObjectService;
 import RMI.TicketSla;
 
-public class Bai31 {
+public class RMI_OBJECT {
     private static final String HOST = "36.50.135.242";
     private static final String[] CREDS = {"B23DCAT120","cyLoolxE"}; 
     public static Object solve(TicketSla a) {

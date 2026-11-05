@@ -5,26 +5,26 @@ import java.util.Map;
 
 import RMI.ByteService;
 
-public class Bai16 {
+public class RMI_BYTE2 {
     private static final String HOST = "36.50.135.242";
-    private static final String[] CREDS = {"B23DCAT120","Z8hytJ6x"}; 
+    private static final String[] CREDS = {"B23DCAT120","FsumPw0i"}; 
     public static byte[] solve(byte[] a) {
         Map<Byte, Integer> mp = new HashMap<>();
         for (byte x : a) {
             mp.put(x, mp.getOrDefault(x, 0) + 1);
         }
-        byte jmin = a[0];
-        int jminval = Integer.MAX_VALUE;
+        byte jmax = a[0];
+        int jmaxval = Integer.MIN_VALUE;
         for (byte x : a) {
             int y = mp.get(x);
-            if (y < jminval) {
-                jminval = y;
-                jmin = x;
+            if (y > jmaxval) {
+                jmaxval = y;
+                jmax = x;
             }
         }
         return new byte[] { 
-            jmin, 
-            (byte) jminval 
+            jmax, 
+            (byte) jmaxval 
         };
     }
     public static void main(String[] args) throws Exception {

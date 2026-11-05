@@ -1,6 +1,6 @@
 import java.net.*;
 
-public class Bai12 {
+public class UDP_STRING2 {
     private static final String HOST = "36.50.135.242";
     private static final int PORT = 2207;
     private static final String CREDS = ";B23DCAT120;ECUuSPkC"; 

@@ -3,7 +3,7 @@ import java.net.*;
 
 import TCP.Customer;
 
-public class Bai10 {
+public class TCP_OBJECT2 {
     private static final String HOST = "36.50.135.242";
     private static final int PORT = 2209;
     private static final String CREDS = "B23DCAT120;kl818WEh"; 

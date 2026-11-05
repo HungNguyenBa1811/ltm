@@ -3,7 +3,7 @@ import java.net.*;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
 
-public class Bai2 {
+public class TCP_BYTE_RAW1 {
     private static final String HOST = "36.50.135.242";
     private static final int PORT = 2206; 
     private static final String CREDS = "B23DCAT120;mv2jDcO3";

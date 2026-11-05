@@ -1,19 +1,20 @@
 import java.net.*;
 
-public class Bai11 {
-    private static final String HOST = "36.50.135.242";
-    private static final int PORT = 2207;
-    private static final String CREDS = ";B23DCAT120;v9DcKoZr"; 
+public class UDP_DATA1 {
+    static final String HOST = "36.50.135.242";
+    static final Integer PORT = 2207;
+    static final String CREDS = ";B23DCAT120;7SgBVwrd";
+
     public static String solve(String s) {
         String[] w = s.split("[;,]");
+        int n = Integer.valueOf(w[1]);
+        int[] a = new int[105];
+        for (int i = 2; i < w.length; i++) a[Integer.valueOf(w[i].trim())]++;
         String res = w[0] + ";";
-        int cmin = Integer.MAX_VALUE;
-        int cmax = -1;
-        for (int i = 1; i <= 50; i++) {
-            cmin = Math.min(cmin, Integer.valueOf(w[i]));
-            cmax = Math.max(cmax, Integer.valueOf(w[i]));
+        for (int i = 1; i <= n; i++) {
+            if(a[i] < 1) res += String.valueOf(i) + ",";
         }
-        res += cmax + "," + cmin;
+        if (res.endsWith(",")) res = res.substring(0, res.length() - 1);
         return res;
     }
 

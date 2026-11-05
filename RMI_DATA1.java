@@ -5,7 +5,7 @@ import java.util.List;
 
 import RMI.DataService;
 
-public class Bai29 {
+public class RMI_DATA1 {
     private static final String HOST = "36.50.135.242";
     private static final String[] CREDS = {"B23DCAT120","9q9PhlcZ"}; 
     public static List<Integer> solve(int[] a) {

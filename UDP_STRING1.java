@@ -1,7 +1,7 @@
 import java.net.*;
 import java.util.*;
 
-public class Bai7 {    
+public class UDP_STRING1 {    
     static final String HOST = "36.50.135.242";
     static final Integer PORT = 2208;
     static final String CREDS = ";B23DCAT120;11Zd3fhC";
