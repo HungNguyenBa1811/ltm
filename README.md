@@ -1,6 +1,6 @@
 # Lập trình mạng Java
 
-Repo gồm các bài mẫu client TCP, UDP và RMI viết bằng Java. Mỗi file Java ở thư mục gốc là một bài độc lập. Client gửi mã sinh viên và mã câu hỏi tới server, nhận dữ liệu rồi xử lý và nộp kết quả.
+Repo gồm các bài mẫu client TCP, UDP, RMI và SOAP viết bằng Java. Mỗi file Java ở thư mục gốc là một bài độc lập. Client gửi mã sinh viên và mã câu hỏi tới server, nhận dữ liệu rồi xử lý và nộp kết quả.
 
 Tra [pattern làm bài](docs/README.md) để chọn khung phù hợp với đề.
 
@@ -9,6 +9,7 @@ Tra [pattern làm bài](docs/README.md) để chọn khung phù hợp với đ�
 | TCP | `TCP_CHARACTER`, `TCP_BYTE_RAW`, `TCP_DATA`, `TCP_OBJECT`, `TCP_GZIP`, `TCP_NIO` | [Pattern TCP](docs/tcp.md) |
 | UDP | `UDP_DATA`, `UDP_STRING`, `UDP_OBJECT` | [Pattern UDP](docs/udp.md) |
 | RMI | `RMI_BYTE`, `RMI_CHARACTER`, `RMI_DATA`, `RMI_OBJECT` | [Pattern RMI](docs/rmi.md) |
+| SOAP | `WS_DATA`, `SOAP_CHARACTER`, `SOAP_OBJECT` | [Chạy bài SOAP](ws/README.md) |
 
 Số ở cuối tên file phân biệt các bài trong cùng nhóm, như [TCP_CHARACTER1.java](TCP_CHARACTER1.java) và [TCP_CHARACTER2.java](TCP_CHARACTER2.java).
 
@@ -17,6 +18,7 @@ Số ở cuối tên file phân biệt các bài trong cùng nhóm, như [TCP_CH
 | [TCP/](TCP/) | Class dữ liệu cho bài TCP object |
 | [UDP/](UDP/) | Class dữ liệu cho bài UDP object |
 | [RMI/](RMI/) | Interface service và class dữ liệu RMI |
+| [ws/](ws/) | Project Maven cho bài SOAP, có script chạy bài |
 | [docs/](docs/) | Bảng chọn pattern, khung code và cách dùng lại bài mẫu |
 
 Để biên dịch và chạy bài, cần cài JDK có `javac` và `java`. Chạy các lệnh từ thư mục gốc repo. Ví dụ với TCP object:
